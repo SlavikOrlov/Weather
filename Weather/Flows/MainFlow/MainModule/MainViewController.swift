@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Lottie
 
 final class MainViewController: UIViewController {
 
@@ -35,24 +34,8 @@ private extension MainViewController {
     }
 
     func configureLottieAnimation() {
-        let animationView: LottieAnimationView = {
-            let lottieAnimationView = LottieAnimationView(name: "lottieFileWeather")
-            lottieAnimationView.backgroundColor = AssetColor.blue
-            return lottieAnimationView
-        }()
-        view.addSubview(animationView)
-        
-        animationView.frame = view.bounds
-        animationView.center = view.center
-        animationView.alpha = 1
-        animationView.play { _ in
-            UIView.animate(withDuration: 0.4, animations: {
-                animationView.alpha = 0
-            }, completion: { _ in
-                animationView.isHidden = true
-                animationView.removeFromSuperview()
-            })
-        }
+        let controller = navigationController ?? self
+        LottieLaunchScreen().configureLottieAnimation(on: controller.view)
     }
 
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5521495D296F4AAD00C9C86B /* AssetColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5521495C296F4AAD00C9C86B /* AssetColor.swift */; };
+		55214966296F54E900C9C86B /* LottieLaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55214965296F54E900C9C86B /* LottieLaunchScreen.swift */; };
 		5563954029676C5C00E29764 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5563953F29676C5C00E29764 /* AppDelegate.swift */; };
 		5563954229676C5C00E29764 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5563954129676C5C00E29764 /* SceneDelegate.swift */; };
 		5563954429676C5C00E29764 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5563954329676C5C00E29764 /* MainViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		1D2F7EF2074EC9D2A57609F8 /* Pods-Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.release.xcconfig"; path = "Target Support Files/Pods-Weather/Pods-Weather.release.xcconfig"; sourceTree = "<group>"; };
 		5521495C296F4AAD00C9C86B /* AssetColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetColor.swift; sourceTree = "<group>"; };
+		55214965296F54E900C9C86B /* LottieLaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieLaunchScreen.swift; sourceTree = "<group>"; };
 		5563953C29676C5C00E29764 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5563953F29676C5C00E29764 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5563954129676C5C00E29764 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		5521495F296F4DD100C9C86B /* LottieLaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
+				55214965296F54E900C9C86B /* LottieLaunchScreen.swift */,
 				5563954A29676C6000E29764 /* LaunchScreen.storyboard */,
 				556929B9296B6ABA0020894C /* lottieFileWeather.json */,
 			);
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55214966296F54E900C9C86B /* LottieLaunchScreen.swift in Sources */,
 				5563954429676C5C00E29764 /* MainViewController.swift in Sources */,
 				5563954029676C5C00E29764 /* AppDelegate.swift in Sources */,
 				5521495D296F4AAD00C9C86B /* AssetColor.swift in Sources */,
