@@ -6,6 +6,7 @@
 
 ## Stack
 * UIKit
+* Lottie
 
 ## Start
 
