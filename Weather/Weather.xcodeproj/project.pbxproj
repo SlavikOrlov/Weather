@@ -17,6 +17,8 @@
 		5563954C29676C6000E29764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5563954A29676C6000E29764 /* LaunchScreen.storyboard */; };
 		556929BA296B6ABA0020894C /* lottieFileWeather.json in Resources */ = {isa = PBXBuildFile; fileRef = 556929B9296B6ABA0020894C /* lottieFileWeather.json */; };
 		55B8D29B297336BE009F082F /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8D29A297336BE009F082F /* MainTableViewController.swift */; };
+		55B8D29F29735D71009F082F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8D29E29735D71009F082F /* Constants.swift */; };
+		55B8D2A229735EB3009F082F /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8D2A129735EB3009F082F /* UserService.swift */; };
 		DF32DF9FD672546917183AFB /* Pods_Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC21F3F2CF30ED59D3C2507F /* Pods_Weather.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,8 @@
 		5563954D29676C6000E29764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		556929B9296B6ABA0020894C /* lottieFileWeather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottieFileWeather.json; sourceTree = "<group>"; };
 		55B8D29A297336BE009F082F /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		55B8D29E29735D71009F082F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		55B8D2A129735EB3009F082F /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		B93EDDF362FADD38410416C6 /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
 		BC21F3F2CF30ED59D3C2507F /* Pods_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -61,6 +65,7 @@
 		55214959296F4A3E00C9C86B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				55B8D29D29735D62009F082F /* Constants */,
 				5521495E296F4DBB00C9C86B /* Extensions */,
 				5521495A296F4A4800C9C86B /* Resources */,
 			);
@@ -101,38 +106,32 @@
 			path = LottieLaunchScreen;
 			sourceTree = "<group>";
 		};
-		55214962296F4F5E00C9C86B /* Flows */ = {
+		55214962296F4F5E00C9C86B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				55214963296F4F7100C9C86B /* MainFlow */,
+				55214963296F4F7100C9C86B /* MainView */,
 			);
-			path = Flows;
+			path = View;
 			sourceTree = "<group>";
 		};
-		55214963296F4F7100C9C86B /* MainFlow */ = {
-			isa = PBXGroup;
-			children = (
-				55214964296F4F8000C9C86B /* MainModule */,
-			);
-			path = MainFlow;
-			sourceTree = "<group>";
-		};
-		55214964296F4F8000C9C86B /* MainModule */ = {
+		55214963296F4F7100C9C86B /* MainView */ = {
 			isa = PBXGroup;
 			children = (
 				5563954329676C5C00E29764 /* MainViewController.swift */,
 				5563954529676C5C00E29764 /* Main.storyboard */,
 				55B8D29A297336BE009F082F /* MainTableViewController.swift */,
 			);
-			path = MainModule;
+			path = MainView;
 			sourceTree = "<group>";
 		};
 		5563953329676C5C00E29764 = {
 			isa = PBXGroup;
 			children = (
-				55214962296F4F5E00C9C86B /* Flows */,
+				55B8D2A029735EA8009F082F /* Services */,
+				55B8D29C29734CBD009F082F /* Model */,
+				55214962296F4F5E00C9C86B /* View */,
 				55214959296F4A3E00C9C86B /* Common */,
-				5563953E29676C5C00E29764 /* Weather */,
+				5563953E29676C5C00E29764 /* Support */,
 				5563953D29676C5C00E29764 /* Products */,
 				EC0E4FE8ACC0E00CAF5B9CC5 /* Pods */,
 				3EDECAB2D6BDC0348AFF0D12 /* Frameworks */,
@@ -147,7 +146,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5563953E29676C5C00E29764 /* Weather */ = {
+		5563953E29676C5C00E29764 /* Support */ = {
 			isa = PBXGroup;
 			children = (
 				5563953F29676C5C00E29764 /* AppDelegate.swift */,
@@ -155,7 +154,30 @@
 				5563954829676C6000E29764 /* Assets.xcassets */,
 				5563954D29676C6000E29764 /* Info.plist */,
 			);
-			path = Weather;
+			path = Support;
+			sourceTree = "<group>";
+		};
+		55B8D29C29734CBD009F082F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		55B8D29D29735D62009F082F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				55B8D29E29735D71009F082F /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		55B8D2A029735EA8009F082F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				55B8D2A129735EB3009F082F /* UserService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		EC0E4FE8ACC0E00CAF5B9CC5 /* Pods */ = {
@@ -287,6 +309,8 @@
 				5563954429676C5C00E29764 /* MainViewController.swift in Sources */,
 				5563954029676C5C00E29764 /* AppDelegate.swift in Sources */,
 				5521495D296F4AAD00C9C86B /* AssetColor.swift in Sources */,
+				55B8D2A229735EB3009F082F /* UserService.swift in Sources */,
+				55B8D29F29735D71009F082F /* Constants.swift in Sources */,
 				55B8D29B297336BE009F082F /* MainTableViewController.swift in Sources */,
 				5563954229676C5C00E29764 /* SceneDelegate.swift in Sources */,
 			);
@@ -438,7 +462,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B742N52C8N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Weather/Info.plist;
+				INFOPLIST_FILE = Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -467,7 +491,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B742N52C8N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Weather/Info.plist;
+				INFOPLIST_FILE = Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
