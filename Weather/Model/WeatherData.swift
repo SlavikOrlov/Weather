@@ -1,5 +1,5 @@
 //
-//  Data.swift
+//  WeatherData.swift
 //  Weather
 //
 //  Created by Slava Orlov on 15.01.2023.
@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct Data: Decodable {
+struct WeatherData: Decodable {
     let info: Info
     let fact: Fact
-    let forecast: [Forecast]
+    let forecasts: [Forecast]
 }
 
 struct Info: Decodable {

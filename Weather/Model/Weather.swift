@@ -9,12 +9,15 @@ import Foundation
 
 struct Weather {
     var name: String = "Name"
-    var temperature: Int
-    var conditionCodeImage: String
-    var url: String
-    var condition: String
-    var windSpeed: Double
-    var pressureMm: Int
+    var temperature: Int = 0
+    var temperatureString: String {
+        return String(temperature)
+    }
+    var conditionCodeImage: String = ""
+    var url: String = ""
+    var condition: String = ""
+    var windSpeed: Double = 0
+    var pressureMm: Int = 0
     var tempMin: Int = 0
     var tempMax: Int = 0
 
@@ -63,14 +66,17 @@ struct Weather {
         }
     }
 
-    init?(data: Data) {
+    init?(data: WeatherData) {
         temperature = data.fact.temp
         conditionCodeImage = data.fact.icon
         url = data.info.url
         condition = data.fact.condition
         windSpeed = data.fact.windSpeed
         pressureMm = data.fact.pressureMm
-        tempMin = data.forecast.first!.parts.day.tempMin!
-        tempMax = data.forecast.first!.parts.day.tempMax!
+        tempMin = data.forecasts.first!.parts.day.tempMin!
+        tempMax = data.forecasts.first!.parts.day.tempMax!
+    }
+
+    init() {
     }
 }
