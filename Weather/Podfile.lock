@@ -1,16 +1,20 @@
 PODS:
   - lottie-ios (4.0.1)
+  - SwiftSVG (2.3.2)
 
 DEPENDENCIES:
   - lottie-ios
+  - SwiftSVG (~> 2.0)
 
 SPEC REPOS:
   trunk:
     - lottie-ios
+    - SwiftSVG
 
 SPEC CHECKSUMS:
   lottie-ios: 54d22edf55b839f0929cabbfe609c9aa548b1145
+  SwiftSVG: ca7f64e403b8ea7ea8eba8c823b83ba4a059834c
 
-PODFILE CHECKSUM: 3252000b1f272866af2fe31504d25fdf6c8bea8a
+PODFILE CHECKSUM: b05029f2ec22660f300c39b95af57a95afd1e052
 
 COCOAPODS: 1.11.3
