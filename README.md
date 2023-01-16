@@ -7,6 +7,8 @@
 ## Stack
 * UIKit
 * Lottie
+* SwiftSVG
+* CoreLocation
 
 ## Start
 
