@@ -17,7 +17,7 @@ final class MainTableViewCell: UITableViewCell {
 
     func configure(weather: Weather) {
         self.nameCityLabel.text = weather.name
-        self.statusCityLabel.text = weather.condition
+        self.statusCityLabel.text = weather.conditionString
         self.tempCityLabel.text = weather.temperatureString
     }
 }

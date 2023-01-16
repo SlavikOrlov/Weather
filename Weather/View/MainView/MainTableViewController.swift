@@ -71,6 +71,17 @@ final class MainTableViewController: UITableViewController {
         return cell
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetailVC" {
+            guard let indexPath = tableView.indexPathForSelectedRow else {
+                return
+            }
+            let cityWeather = citiesArray[indexPath.row]
+            let detailVC = segue.destination as! DetailViewController
+            detailVC.weatherModel = cityWeather
+        }
+    }
+
 }
 
 // MARK: - Private Methods

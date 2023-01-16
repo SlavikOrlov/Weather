@@ -70,6 +70,7 @@
                                     <outlet property="nameCityLabel" destination="Lzn-53-FB6" id="uzp-Np-GgB"/>
                                     <outlet property="statusCityLabel" destination="9i4-X3-nQH" id="5GG-hb-drn"/>
                                     <outlet property="tempCityLabel" destination="4ci-U1-g9n" id="JgC-IK-GsL"/>
+                                    <segue destination="vN5-Ov-ype" kind="show" identifier="showDetailVC" id="N10-ST-tzW"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -83,12 +84,12 @@
             </objects>
             <point key="canvasLocation" x="-294" y="77"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="PEJ-9X-yDN">
             <objects>
-                <viewController id="vN5-Ov-ype" sceneMemberID="viewController">
+                <viewController id="vN5-Ov-ype" customClass="DetailViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zej-Ec-CVc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="Irf-pN-KnV" userLabel="Top Stack View">
@@ -247,6 +248,17 @@
                             <constraint firstItem="arL-fZ-VuP" firstAttribute="top" secondItem="Irf-pN-KnV" secondAttribute="bottom" constant="100" id="whq-oD-EFe"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Xw0-xb-arh"/>
+                    <connections>
+                        <outlet property="conditionCityLabel" destination="fJa-RS-yZm" id="MtE-gA-fiA"/>
+                        <outlet property="imageWeatherView" destination="4yY-F1-9Dq" id="SOv-4p-IPb"/>
+                        <outlet property="maxTempLabel" destination="wsw-JL-eYX" id="rg3-k8-zGl"/>
+                        <outlet property="minTempLabel" destination="4uy-uk-wVt" id="bQ4-Uc-J96"/>
+                        <outlet property="nameCityLabel" destination="16U-oi-qjm" id="EP4-Yu-M7Y"/>
+                        <outlet property="pressureLabel" destination="MyX-ss-exL" id="8go-z9-m4e"/>
+                        <outlet property="tempCityLabel" destination="uHu-L5-eC4" id="hle-kF-d4g"/>
+                        <outlet property="windSpeedLabel" destination="75s-IL-s12" id="uRO-6X-LY4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tyv-1W-Kyy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

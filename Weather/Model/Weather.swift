@@ -9,14 +9,14 @@ import Foundation
 
 struct Weather {
     var name: String = "Name"
-    var temperature: Int = 0
+    var temperature: Double = 0.0
     var temperatureString: String {
-        return String(temperature)
+        return String(format: "%.0f", temperature)
     }
     var conditionCodeImage: String = ""
     var url: String = ""
     var condition: String = ""
-    var windSpeed: Double = 0
+    var windSpeed: Double = 0.0
     var pressureMm: Int = 0
     var tempMin: Int = 0
     var tempMax: Int = 0

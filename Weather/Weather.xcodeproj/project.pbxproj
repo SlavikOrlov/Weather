@@ -23,6 +23,7 @@
 		55B8D2A629747464009F082F /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8D2A529747464009F082F /* Weather.swift */; };
 		55B8D2A829748134009F082F /* GetCitiesWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8D2A729748134009F082F /* GetCitiesWeather.swift */; };
 		55B8D2AD2974A8ED009F082F /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8D2AC2974A8ED009F082F /* MainTableViewCell.swift */; };
+		55B8D2B02975E9A6009F082F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8D2AF2975E9A6009F082F /* DetailViewController.swift */; };
 		DF32DF9FD672546917183AFB /* Pods_Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC21F3F2CF30ED59D3C2507F /* Pods_Weather.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		55B8D2A529747464009F082F /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		55B8D2A729748134009F082F /* GetCitiesWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCitiesWeather.swift; sourceTree = "<group>"; };
 		55B8D2AC2974A8ED009F082F /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		55B8D2AF2975E9A6009F082F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B93EDDF362FADD38410416C6 /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
 		BC21F3F2CF30ED59D3C2507F /* Pods_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -117,6 +119,7 @@
 		55214962296F4F5E00C9C86B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				55B8D2AE2975E97D009F082F /* DetailView */,
 				55214963296F4F7100C9C86B /* MainView */,
 			);
 			path = View;
@@ -126,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				55B8D2AB2974A80F009F082F /* Cells */,
-				5563954329676C5C00E29764 /* MainViewController.swift */,
 				5563954529676C5C00E29764 /* Main.storyboard */,
 				55B8D29A297336BE009F082F /* MainTableViewController.swift */,
 			);
@@ -198,6 +200,15 @@
 				55B8D2AC2974A8ED009F082F /* MainTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		55B8D2AE2975E97D009F082F /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				5563954329676C5C00E29764 /* MainViewController.swift */,
+				55B8D2AF2975E9A6009F082F /* DetailViewController.swift */,
+			);
+			path = DetailView;
 			sourceTree = "<group>";
 		};
 		EC0E4FE8ACC0E00CAF5B9CC5 /* Pods */ = {
@@ -325,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55B8D2B02975E9A6009F082F /* DetailViewController.swift in Sources */,
 				55214966296F54E900C9C86B /* LottieLaunchScreen.swift in Sources */,
 				5563954429676C5C00E29764 /* MainViewController.swift in Sources */,
 				5563954029676C5C00E29764 /* AppDelegate.swift in Sources */,
