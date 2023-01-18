@@ -13,5 +13,22 @@
 "main.search" = "Search";
 "alert.okButton" = "OK";
 "alert.cancelButton" = "Cancel";
-
-
+"weather.condition.clear" = "Clear";
+"weather.condition.partlyCloudy" = "Partly cloudy";
+"weather.condition.cloudy" = "Cloudy";
+"weather.condition.overcast" = "Overcast";
+"weather.condition.drizzle" = "Drizzle";
+"weather.condition.lightRain" = "Light rain";
+"weather.condition.rain" = "Rain";
+"weather.condition.moderateRain" = "Moderate rain";
+"weather.condition.heavyRain" = "Heavy rain";
+"weather.condition.continuousHeavyRain" = "Continuous heavy rain";
+"weather.condition.showers" = "Showers";
+"weather.condition.wetSnow" = "Wet snow";
+"weather.condition.lightSnow" = "Light snow";
+"weather.condition.snow" = "Snow";
+"weather.condition.snowShowers" = "Snow showers";
+"weather.condition.hail" = "Hail";
+"weather.condition.thunderstorm" = "Thunderstorm";
+"weather.condition.thunderstormWithRain" = "Thunderstorm with rain";
+"weather.condition.thunderstormWithHail" = "Thunderstorm with hail";

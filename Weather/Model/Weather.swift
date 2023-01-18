@@ -25,43 +25,43 @@ struct Weather {
     var conditionString: String {
         switch condition {
         case "clear":
-            return "Clear"
+            return NSLocalizedString("weather.condition.clear", comment: "")
         case "partly-cloudy":
-            return "Partly cloudy"
+            return NSLocalizedString("weather.condition.partlyCloudy", comment: "")
         case "cloudy":
-            return "Cloudy"
+            return NSLocalizedString("weather.condition.cloudy", comment: "")
         case "overcast":
-            return "Overcast"
+            return NSLocalizedString("weather.condition.overcast", comment: "")
         case "drizzle":
-            return "Drizzle"
+            return NSLocalizedString("weather.condition.drizzle", comment: "")
         case "light-rain":
-            return "Light rain"
+            return NSLocalizedString("weather.condition.lightRain", comment: "")
         case "rain":
-            return "Rain"
+            return NSLocalizedString("weather.condition.rain", comment: "")
         case "moderate-rain":
-            return "Moderate rain"
+            return NSLocalizedString("weather.condition.moderateRain", comment: "")
         case "heavy-rain":
-            return "Heavy rain"
+            return NSLocalizedString("weather.condition.heavyRain", comment: "")
         case "continuous-heavy-rain":
-            return "Continuous heavy rain"
+            return NSLocalizedString("weather.condition.continuousHeavyRain", comment: "")
         case "showers":
-            return "Showers"
+            return NSLocalizedString("weather.condition.showers", comment: "")
         case "wet-snow":
-            return "Wet snow"
+            return NSLocalizedString("weather.condition.wetSnow", comment: "")
         case "light-snow":
-            return "Light snow"
+            return NSLocalizedString("weather.condition.lightSnow", comment: "")
         case "snow":
-            return "Snow"
+            return NSLocalizedString("weather.condition.snow", comment: "")
         case "snow-showers":
-            return "Snow showers"
+            return NSLocalizedString("weather.condition.snowShowers", comment: "")
         case "hail":
-            return "Hail"
+            return NSLocalizedString("weather.condition.hail", comment: "")
         case "thunderstorm":
-            return "Thunderstorm"
+            return NSLocalizedString("weather.condition.thunderstorm", comment: "")
         case "thunderstorm-with-rain":
-            return "Thunderstorm with rain"
+            return NSLocalizedString("weather.condition.thunderstormWithRain", comment: "")
         case "thunderstorm-with-hail":
-            return "Thunderstorm with hail"
+            return NSLocalizedString("weather.condition.thunderstormWithHail", comment: "")
         default:
             return "Loading..."
         }
