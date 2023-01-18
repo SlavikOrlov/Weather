@@ -15,8 +15,7 @@ final class MainTableViewController: UITableViewController {
     let emptyCity = Weather()
     let userServise = UserService()
     var citiesArray = [Weather]()
-    let nameCities = [
-        "Barselona",
+    var nameCities = [
         "Antalya",
         "Buenos Aires",
         "Helsinki",
@@ -55,8 +54,15 @@ final class MainTableViewController: UITableViewController {
             }
         }
     }
-
     
+    @IBAction func didTapAddCity(_ sender: Any) {
+        alertAddCity(name: "City", placeholder: "Enter the name of the city") { (city) in
+            self.nameCities.append(city)
+            self.citiesArray.append(self.emptyCity)
+            self.addCities()
+        }
+    }
+
     // MARK: - UITableViewDataSource
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -80,6 +86,17 @@ final class MainTableViewController: UITableViewController {
             let detailVC = segue.destination as! DetailViewController
             detailVC.weatherModel = cityWeather
         }
+    }
+
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { (_, _, completionHandler) in
+            let editingRow = self.nameCities[indexPath.row]
+            if let index = self.nameCities.firstIndex(of: editingRow) {
+                self.citiesArray.remove(at: index)
+            }
+            tableView.reloadData()
+        }
+        return UISwipeActionsConfiguration(actions: [deleteAction])
     }
 
 }

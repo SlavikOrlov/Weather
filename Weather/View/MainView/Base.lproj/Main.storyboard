@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OlG-Py-b0m">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oEZ-zc-L9O">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -79,21 +79,28 @@
                             <outlet property="delegate" destination="OlG-Py-b0m" id="myj-6U-896"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="T4y-aS-TyH">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="nrd-HV-p8c">
+                            <connections>
+                                <action selector="didTapAddCity:" destination="OlG-Py-b0m" id="tA3-V8-qPQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wtK-xt-tbo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-294" y="77"/>
+            <point key="canvasLocation" x="615.94202898550725" y="76.339285714285708"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="PEJ-9X-yDN">
             <objects>
                 <viewController id="vN5-Ov-ype" customClass="DetailViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zej-Ec-CVc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="Irf-pN-KnV" userLabel="Top Stack View">
-                                <rect key="frame" x="132" y="144" width="150" height="289.5"/>
+                                <rect key="frame" x="132" y="188" width="150" height="289.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MainName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16U-oi-qjm">
                                         <rect key="frame" x="34.5" y="0.0" width="81.5" height="20.5"/>
@@ -135,7 +142,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="arL-fZ-VuP" userLabel="Left Stack View">
-                                <rect key="frame" x="20" y="533.5" width="195" height="112"/>
+                                <rect key="frame" x="20" y="577.5" width="195" height="112"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pressure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVj-Fl-yfd">
                                         <rect key="frame" x="0.0" y="0.0" width="67" height="20.5"/>
@@ -164,7 +171,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RaP-jP-Y7m" userLabel="Right Stack View">
-                                <rect key="frame" x="303.5" y="533.5" width="90.5" height="112"/>
+                                <rect key="frame" x="303.5" y="577.5" width="90.5" height="112"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="SJf-Vg-Dmk" userLabel="Pressure Stack View">
                                         <rect key="frame" x="0.0" y="0.0" width="90.5" height="20.5"/>
@@ -262,7 +269,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tyv-1W-Kyy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="460.86956521739131" y="75.669642857142847"/>
+            <point key="canvasLocation" x="1371.0144927536232" y="75.669642857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hVT-Ax-fed">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oEZ-zc-L9O" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ry4-Py-cbJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OlG-Py-b0m" kind="relationship" relationship="rootViewController" id="sWg-i9-NAf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JvL-pf-H5I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-294.20289855072468" y="76.339285714285708"/>
         </scene>
     </scenes>
     <resources>
