@@ -122,7 +122,7 @@ private extension MainTableViewController {
     }
 
     func configureTableView() {
-        self.title = "Weather"
+        self.title = NSLocalizedString("navBar.main", comment: "")
         tableView.backgroundColor = AssetColor.blue
         tableView.alwaysBounceVertical = false
     }

@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  Weather
+
+  Created by Slava Orlov on 18.01.2023.
+  
+*/
+
+"navBar.main" = "Погода";

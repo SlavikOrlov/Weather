@@ -1,0 +1,60 @@
+
+/* Class = "UILabel"; text = "MainName"; ObjectID = "16U-oi-qjm"; */
+"16U-oi-qjm.text" = "MainName";
+
+/* Class = "UILabel"; text = "99"; ObjectID = "4ci-U1-g9n"; */
+"4ci-U1-g9n.text" = "99";
+
+/* Class = "UILabel"; text = "1000"; ObjectID = "4uy-uk-wVt"; */
+"4uy-uk-wVt.text" = "1000";
+
+/* Class = "UILabel"; text = "1000"; ObjectID = "75s-IL-s12"; */
+"75s-IL-s12.text" = "1000";
+
+/* Class = "UILabel"; text = "Status"; ObjectID = "9i4-X3-nQH"; */
+"9i4-X3-nQH.text" = "Status";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "Lzn-53-FB6"; */
+"Lzn-53-FB6.text" = "Name";
+
+/* Class = "UILabel"; text = "1000"; ObjectID = "MyX-ss-exL"; */
+"MyX-ss-exL.text" = "1000";
+
+/* Class = "UILabel"; text = "mmHg"; ObjectID = "RVz-sO-m3D"; */
+"RVz-sO-m3D.text" = "mmHg";
+
+/* Class = "UILabel"; text = "°C"; ObjectID = "Uey-O9-K0r"; */
+"Uey-O9-K0r.text" = "°C";
+
+/* Class = "UILabel"; text = "Max daytime temperature"; ObjectID = "bRz-kY-GFM"; */
+"bRz-kY-GFM.text" = "Max daytime temperature";
+
+/* Class = "UILabel"; text = "°C"; ObjectID = "dQF-DM-f99"; */
+"dQF-DM-f99.text" = "°C";
+
+/* Class = "UILabel"; text = "Sunny"; ObjectID = "fJa-RS-yZm"; */
+"fJa-RS-yZm.text" = "Sunny";
+
+/* Class = "UILabel"; text = "Min daytime temperature"; ObjectID = "fOa-Oc-2zW"; */
+"fOa-Oc-2zW.text" = "Min daytime temperature";
+
+/* Class = "UILabel"; text = "Pressure"; ObjectID = "iVj-Fl-yfd"; */
+"iVj-Fl-yfd.text" = "Pressure";
+
+/* Class = "UILabel"; text = "°C"; ObjectID = "oaO-Np-p2d"; */
+"oaO-Np-p2d.text" = "°C";
+
+/* Class = "UILabel"; text = "m/sec"; ObjectID = "sn2-fO-027"; */
+"sn2-fO-027.text" = "m/sec";
+
+/* Class = "UILabel"; text = "35"; ObjectID = "uHu-L5-eC4"; */
+"uHu-L5-eC4.text" = "35";
+
+/* Class = "UILabel"; text = "°C"; ObjectID = "vXj-PK-4Wt"; */
+"vXj-PK-4Wt.text" = "°C";
+
+/* Class = "UILabel"; text = "1000"; ObjectID = "wsw-JL-eYX"; */
+"wsw-JL-eYX.text" = "1000";
+
+/* Class = "UILabel"; text = "Wind speed"; ObjectID = "zti-7E-ixK"; */
+"zti-7E-ixK.text" = "Wind speed";
