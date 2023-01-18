@@ -34,12 +34,12 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9i4-X3-nQH">
-                                            <rect key="frame" x="271.5" y="11.5" width="49" height="20.5"/>
+                                            <rect key="frame" x="265" y="11.5" width="49" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="cAQ-ck-yvX" userLabel="Degree Stack View">
+                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="cAQ-ck-yvX" userLabel="Degree Stack View">
                                             <rect key="frame" x="350.5" y="11.5" width="43.5" height="20.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ci-U1-g9n">
@@ -58,11 +58,11 @@
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="cAQ-ck-yvX" firstAttribute="leading" secondItem="9i4-X3-nQH" secondAttribute="trailing" constant="30" id="CXA-lk-Ad4"/>
                                         <constraint firstItem="Lzn-53-FB6" firstAttribute="leading" secondItem="liY-T5-izM" secondAttribute="leading" constant="20" id="Fsd-O8-h6W"/>
                                         <constraint firstAttribute="trailing" secondItem="dQF-DM-f99" secondAttribute="trailing" constant="20" id="LGF-h9-1Nk"/>
                                         <constraint firstItem="4ci-U1-g9n" firstAttribute="centerY" secondItem="liY-T5-izM" secondAttribute="centerY" id="QfW-FZ-nbN"/>
                                         <constraint firstItem="Lzn-53-FB6" firstAttribute="centerY" secondItem="liY-T5-izM" secondAttribute="centerY" id="Syi-4l-CbB"/>
+                                        <constraint firstAttribute="trailing" secondItem="9i4-X3-nQH" secondAttribute="trailing" constant="100" id="cir-DW-3bJ"/>
                                         <constraint firstItem="9i4-X3-nQH" firstAttribute="centerY" secondItem="liY-T5-izM" secondAttribute="centerY" id="wrR-Uc-BIx"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -70,6 +70,7 @@
                                     <outlet property="nameCityLabel" destination="Lzn-53-FB6" id="uzp-Np-GgB"/>
                                     <outlet property="statusCityLabel" destination="9i4-X3-nQH" id="5GG-hb-drn"/>
                                     <outlet property="tempCityLabel" destination="4ci-U1-g9n" id="JgC-IK-GsL"/>
+                                    <outlet property="tempConstantLabel" destination="dQF-DM-f99" id="Mte-f5-AbI"/>
                                     <segue destination="vN5-Ov-ype" kind="show" identifier="showDetailVC" id="N10-ST-tzW"/>
                                 </connections>
                             </tableViewCell>
