@@ -8,6 +8,7 @@
 import Foundation
 
 struct Weather {
+
     var name: String = "Name"
     var temperature: Double = 0.0
     var temperatureString: String {
@@ -79,4 +80,5 @@ struct Weather {
 
     init() {
     }
+
 }

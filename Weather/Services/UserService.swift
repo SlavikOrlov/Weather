@@ -29,10 +29,8 @@ struct UserService {
                 print(String(describing: error))
                 return
             }
-            //print(String(data: data, encoding: .utf8)!)
             if let weather = self.parseJSON(withData: data) {
                 completionHandler(weather)
-                //print(weather)
             }
         }
         task.resume()
