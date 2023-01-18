@@ -15,7 +15,7 @@
 		5563954929676C6000E29764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5563954829676C6000E29764 /* Assets.xcassets */; };
 		5563954C29676C6000E29764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5563954A29676C6000E29764 /* LaunchScreen.storyboard */; };
 		556929BA296B6ABA0020894C /* lottieFileWeather.json in Resources */ = {isa = PBXBuildFile; fileRef = 556929B9296B6ABA0020894C /* lottieFileWeather.json */; };
-		55A33A0D297805E000D2EDF2 /* alertAddCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A33A0C297805E000D2EDF2 /* alertAddCity.swift */; };
+		55A33A0D297805E000D2EDF2 /* AlertAddCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A33A0C297805E000D2EDF2 /* AlertAddCity.swift */; };
 		55A33A11297851DC00D2EDF2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55A33A13297851DC00D2EDF2 /* Localizable.strings */; };
 		55B8D29B297336BE009F082F /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8D29A297336BE009F082F /* MainTableViewController.swift */; };
 		55B8D29F29735D71009F082F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8D29E29735D71009F082F /* Constants.swift */; };
@@ -40,7 +40,7 @@
 		5563954B29676C6000E29764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5563954D29676C6000E29764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		556929B9296B6ABA0020894C /* lottieFileWeather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottieFileWeather.json; sourceTree = "<group>"; };
-		55A33A0C297805E000D2EDF2 /* alertAddCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertAddCity.swift; sourceTree = "<group>"; };
+		55A33A0C297805E000D2EDF2 /* AlertAddCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAddCity.swift; sourceTree = "<group>"; };
 		55A33A12297851DC00D2EDF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		55A33A142978522100D2EDF2 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		55A33A152978522100D2EDF2 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 		55A33A0B297805C600D2EDF2 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				55A33A0C297805E000D2EDF2 /* alertAddCity.swift */,
+				55A33A0C297805E000D2EDF2 /* AlertAddCity.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -362,7 +362,7 @@
 			files = (
 				55B8D2B02975E9A6009F082F /* DetailViewController.swift in Sources */,
 				55214966296F54E900C9C86B /* LottieLaunchScreen.swift in Sources */,
-				55A33A0D297805E000D2EDF2 /* alertAddCity.swift in Sources */,
+				55A33A0D297805E000D2EDF2 /* AlertAddCity.swift in Sources */,
 				5563954029676C5C00E29764 /* AppDelegate.swift in Sources */,
 				5521495D296F4AAD00C9C86B /* AssetColor.swift in Sources */,
 				55B8D2A629747464009F082F /* Weather.swift in Sources */,

@@ -6,4 +6,10 @@
   
 */
 
-"navBar.main" = "Погода";
+"main.navBar" = "Погода";
+"main.delete" = "Удалить";
+"main.alertAddCity" = "Введите название города";
+"main.title" = "Добавить город";
+"main.search" = "Поиск";
+"alert.okButton" = "OK";
+"alert.cancelButton" = "Выход";

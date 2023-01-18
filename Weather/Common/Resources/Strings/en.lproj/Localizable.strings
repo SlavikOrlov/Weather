@@ -6,4 +6,12 @@
   
 */
 
-"navBar.main" = "Weather";
+"main.navBar" = "Weather";
+"main.delete" = "Delete";
+"main.alertAddCity" = "Enter the name of the city";
+"main.title" = "Add a city";
+"main.search" = "Search";
+"alert.okButton" = "OK";
+"alert.cancelButton" = "Cancel";
+
+

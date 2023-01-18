@@ -80,7 +80,9 @@ final class MainTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { (_, _, completionHandler) in
+        let deleteAction = UIContextualAction(
+            style: .destructive,
+            title: NSLocalizedString("main.delete", comment: "")) { (_, _, completionHandler) in
             let editingRow = self.nameCities[indexPath.row]
             if let index = self.nameCities.firstIndex(of: editingRow) {
                 if self.isFiltering {
@@ -114,7 +116,7 @@ private extension MainTableViewController {
     func configureSearchController() {
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search"
+        searchController.searchBar.placeholder = NSLocalizedString("main.search", comment: "")
         navigationItem.searchController = searchController
         definesPresentationContext = true
         navigationItem.hidesSearchBarWhenScrolling = false
@@ -122,7 +124,7 @@ private extension MainTableViewController {
     }
 
     func configureTableView() {
-        self.title = NSLocalizedString("navBar.main", comment: "")
+        self.title = NSLocalizedString("main.navBar", comment: "")
         tableView.backgroundColor = AssetColor.blue
         tableView.alwaysBounceVertical = false
     }
@@ -169,7 +171,8 @@ extension MainTableViewController: UISearchResultsUpdating {
 private extension MainTableViewController {
 
     @IBAction func didTapAddCity(_ sender: Any) {
-        alertAddCity(name: "City", placeholder: "Enter the name of the city") { (city) in
+        alertAddCity(name: NSLocalizedString("main.title", comment: ""),
+                     placeholder: NSLocalizedString("main.alertAddCity", comment: "")) { (city) in
             self.nameCities.append(city)
             self.citiesArray.append(self.emptyCity)
             self.addCities()
