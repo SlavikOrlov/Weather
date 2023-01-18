@@ -32,3 +32,10 @@
 "weather.condition.thunderstorm" = "Гроза";
 "weather.condition.thunderstormWithRain" = "Гроза с дождем";
 "weather.condition.thunderstormWithHail" = "Гроза с градом";
+"detail.title" = "Детальная информация";
+"detail.pressure" = "Давление";
+"detail.windSpeed" = "Скорость ветра";
+"detail.minTemp" = "Минимальная дневная температура";
+"detail.maxTemp" = "Максимальная дневная температура";
+"detail.pressure.description" = "мм рт.ст.";
+"detail.windSpeed.description" = "м/сек.";

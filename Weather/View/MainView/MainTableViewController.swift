@@ -58,7 +58,6 @@ final class MainTableViewController: UITableViewController {
             weather = citiesArray[indexPath.row]
         }
         cell.configure(weather: weather)
-        cell.backgroundColor = AssetColor.blue
         return cell
     }
 
@@ -120,12 +119,10 @@ private extension MainTableViewController {
         navigationItem.searchController = searchController
         definesPresentationContext = true
         navigationItem.hidesSearchBarWhenScrolling = false
-        searchController.searchBar.backgroundColor = AssetColor.blue
     }
 
     func configureTableView() {
         self.title = NSLocalizedString("main.navBar", comment: "")
-        tableView.backgroundColor = AssetColor.blue
         tableView.alwaysBounceVertical = false
     }
 

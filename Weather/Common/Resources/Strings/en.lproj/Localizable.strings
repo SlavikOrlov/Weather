@@ -32,3 +32,10 @@
 "weather.condition.thunderstorm" = "Thunderstorm";
 "weather.condition.thunderstormWithRain" = "Thunderstorm with rain";
 "weather.condition.thunderstormWithHail" = "Thunderstorm with hail";
+"detail.title" = "Detail information";
+"detail.pressure" = "Pressure";
+"detail.windSpeed" = "Wind speed";
+"detail.minTemp" = "Min daytime temperature";
+"detail.maxTemp" = "Max daytime temperature";
+"detail.pressure.description" = "mmHg";
+"detail.windSpeed.description" = "m/sec";

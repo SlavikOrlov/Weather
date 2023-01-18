@@ -260,12 +260,21 @@
                     <connections>
                         <outlet property="conditionCityLabel" destination="fJa-RS-yZm" id="MtE-gA-fiA"/>
                         <outlet property="imageWeatherView" destination="4yY-F1-9Dq" id="SOv-4p-IPb"/>
+                        <outlet property="maxTempConstantLabel" destination="Uey-O9-K0r" id="VC9-Yx-5aA"/>
                         <outlet property="maxTempLabel" destination="wsw-JL-eYX" id="rg3-k8-zGl"/>
+                        <outlet property="maxTempNameLabel" destination="bRz-kY-GFM" id="LfO-uZ-KC4"/>
+                        <outlet property="minTempConstantLabel" destination="oaO-Np-p2d" id="Fiz-f0-tyH"/>
                         <outlet property="minTempLabel" destination="4uy-uk-wVt" id="bQ4-Uc-J96"/>
+                        <outlet property="minTempNameLabel" destination="fOa-Oc-2zW" id="61u-lL-boU"/>
                         <outlet property="nameCityLabel" destination="16U-oi-qjm" id="EP4-Yu-M7Y"/>
+                        <outlet property="pressureConstantLabel" destination="RVz-sO-m3D" id="g71-Im-MYI"/>
                         <outlet property="pressureLabel" destination="MyX-ss-exL" id="8go-z9-m4e"/>
+                        <outlet property="pressureNameLabel" destination="iVj-Fl-yfd" id="7M0-wK-Mev"/>
                         <outlet property="tempCityLabel" destination="uHu-L5-eC4" id="hle-kF-d4g"/>
+                        <outlet property="tempConstantLabel" destination="vXj-PK-4Wt" id="ary-cs-zr1"/>
+                        <outlet property="windConstantLabel" destination="sn2-fO-027" id="kEi-Mc-Ftg"/>
                         <outlet property="windSpeedLabel" destination="75s-IL-s12" id="uRO-6X-LY4"/>
+                        <outlet property="windSpeedNameLabel" destination="zti-7E-ixK" id="gYF-EH-mxy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tyv-1W-Kyy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
